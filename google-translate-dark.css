@@ -1,0 +1,9 @@
+* {
+	color: #ccc !important;
+	background-color: #1f1f1f !important;
+	border-color: #000 !important;
+}
+
+button *{
+	background-color: #1f1f1f !important;
+}
