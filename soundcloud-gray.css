@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name           Empty @name replaces the default template - 26.9.2019 klo 20.43.36
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@preprocessor   less
+==/UserStyle== */
+
+@-moz-document domain("soundcloud.com") {
+
+	@bgMain: #393A41;
+	@bgSec: #48494e;
+	@colorMain: #eee;
+	@colorSec: #fff;
+
+	
+	a {
+		color: @colorSec !important;
+		text-shadow: 0px 0px 1px #080808,0px 0px 1px #080808,0px 0px 1px #080808,0px 0px 1px #080808 !important;
+
+	}
+	
+	p span, h1, h2, h3, h4, h5, h6 {
+		color: @colorMain !important;
+	}
+	
+	body {
+		background: @bgMain;
+	}
+	
+	* {
+		background-color: @bgMain !important;
+		color: @colorMain !important;
+    font-family: 'Roboto';
+    text-decoration: none !important;
+		border: 0 !important;
+	}
+	
+	.playableTile__actions {
+		opacity: 0 !important;
+	}
+	
+	.playButton,
+	.sc-button-play.playButton, {
+		background-color: #f50 !important
+	}
+	
+	//header & footer
+	.header, .header *,
+	.playControls.g-z-index-control-bar.m-visible * {
+		background-color: @bgSec !important;
+		
+		.playbackTimeline__progressBar {
+			background-color: #f50 !important;
+		}
+		.playbackTimeline__progressBackground {
+			background-color: #ccc !important
+		}
+	}
+	
+	.l-container {
+		width: 93%;
+	}
+	
+
+	.profileHeader *{
+		background-color: transparent !important;
+		.profileHeaderInfo__userName {
+			background: @bgSec !important;
+		}
+	}
+	
+	.sound__waveform, .sound__waveform *,
+	.waveform, .waveform *,
+	.sound__header, .sound__header *,
+	.soundBadge__playButton,
+	.soundBadge__additional,
+	.queueItemView__playButton,
+	.selectionPlaylistBanner__playButton, .playableTile__playButton, .playableTile__actions, .playableTile__description {
+		background-color: transparent !important;	
+		background: transparent !important;
+	}
+	
+	.sidebarModule.mobileApps {
+		display: none !important;
+	}
+	
+}
