@@ -1,0 +1,78 @@
+/* ==UserStyle==
+@name           learn.hamk.fi - 24.9.2019 klo 18.47.53
+@namespace      github.com/liimaa/userstyles
+@version        1.0.0
+@description    234
+@preprocessor   less	
+@author         liima
+==/UserStyle== */
+
+@-moz-document domain("learn.hamk.fi") {
+ 
+	@bgMain: #1f1f1f;
+	@bgSec: #727272;
+	
+	@colorText: #eee;
+	@colorLink: #f5a3a3;
+	@colorHeader: #bbbfc4;
+	@colorHover: pink;
+
+	
+	.link {
+		color: @colorLink;
+	}
+
+	.text {
+		color: @colorText;
+	}
+	
+	.header {
+		color: @colorHeader;
+		//box-shadow: 2px 0 5px 0 rgba(0,0,0,0.25);
+	}
+	
+	
+	* { 		
+			background-color: @bgMain;
+			border-color: @bgSec;
+		
+			.miscForces();
+			.mods();
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		.header();
+	}
+
+	a {
+		.link() !important;
+		&:hover {
+			color: @colorHover !important;
+		}
+	}
+
+	p, span, td {
+		.text();
+	}
+
+	li {
+		.text();
+		a {
+			.link() !important;
+		}
+	}
+	
+	
+	.mods {
+		.modtype_assign * {
+			.link() !important;
+		} 
+	}
+	
+	.miscForces {
+		.branding, .top-bar { background-color: @bgMain !important; }
+		.page-header-headings h1 { .header() !important; }
+		td { border-color: @bgSec !important; }
+		.breadcrumb a { .link() !important; }
+	}
+}
