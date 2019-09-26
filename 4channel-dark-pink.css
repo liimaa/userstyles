@@ -1,0 +1,66 @@
+:root {
+	--main-bg-color: #171717;
+	--secnd-bg-color: #1b1b1b;
+	
+	--link-color: #d15f74;
+	--link-hover-color: #e96a81;
+	
+	--text-color: #e3c2b3;
+	/*
+	--text2-color: #5a4d47;
+  background-color: var(--main-bg-color);
+	background-color: var(--secnd-bg-color);
+	color: var(--link-color);
+	color: var(--link-hover-color);
+	color: var(--text-color);
+	*/
+}
+
+
+
+body { background: var(--main-bg-color) !important; }
+body * {
+	background-color: var(--main-bg-color) !important;
+	border-color: transparent !important;
+	color: var(--text-color) !important;
+}
+
+.reply{
+	border: 1px solid #353535 !important;
+	border-top: 1px solid #353535 !important;
+	border-left: 1px solid #353535 !important;
+}
+
+.reply:hover{
+	border: 1px solid var(--link-color) !important;
+	border-top: 1px solid var(--link-color) !important;
+	border-left: 1px solid var(--link-color) !important;
+}
+
+.postContainer:nth-child(odd){
+		background: #1f1f1f !important;
+}
+
+
+a, .replylink, a.replylink:not(:hover),
+.quotelink, .qmark-op{
+	color: var(	--link-color) !important;
+}
+
+blockquote>span.quote {
+    color: #789922 !important;
+}
+div#absbot,
+.bottomCtrl{
+	display:none;
+}
+
+s{
+	background-color: #000 !important;
+	color: #000 !important;
+}
+
+s:hover{
+	background-color: transparent !important;
+	color: #fff !important;
+}
